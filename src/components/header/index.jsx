@@ -9,6 +9,7 @@ import { RiPoliceCarFill } from "react-icons/ri";
 import { GrServices } from "react-icons/gr";
 import { FaCheckCircle } from "react-icons/fa";
 import { FiPercent } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -23,23 +24,37 @@ const Header = () => {
                 <img className="text-logo" src={imgText} alt="" />
               </div>
               <div className="veb-btn">
-                <button>Главная</button>
-                <button>Категории</button>
-                <button>Новости</button>
-                <button>О нас</button>
+                <NavLink to="/">
+                  <button>Главная</button>
+                </NavLink>
+                <NavLink to="/category">
+                  <button>Категории</button>
+                </NavLink>
+                <NavLink to="/news">
+                  <button>Новости</button>
+                </NavLink>
+                <NavLink to="/aboutus">
+                  <button>О нас</button>
+                </NavLink>
               </div>
             </div>
             <div className="header-btn">
               <div className="btn-span">
-                <button className="btn-heart">
-                  <FaRegHeart />
-                </button>
-                <button>
-                  <CiShoppingBasket />
-                </button>
-                <button>
-                  <RiUserLine />
-                </button>
+                <NavLink to="/favorite">
+                  <button className="btn-heart">
+                    <FaRegHeart />
+                  </button>
+                </NavLink>
+                <NavLink to="/basket">
+                  <button>
+                    <CiShoppingBasket />
+                  </button>
+                </NavLink>
+                <NavLink to="/admin">
+                  <button>
+                    <RiUserLine />
+                  </button>
+                </NavLink>
               </div>
               <input type="text" placeholder="Поиск..." />
             </div>
