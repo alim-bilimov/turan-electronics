@@ -1,0 +1,132 @@
+.basketCard {
+  width: inherit;
+  height: 251px;
+  border-radius: 24px;
+  display: flex;
+  transition: .5s;
+  align-items: center;
+  gap: 35px;
+  background: linear-gradient(210.55deg, #ebf2f9 19.14%, #c6d7eb 154.68%);
+  box-shadow: 16px 4px 64px 0px rgba(18, 61, 101, 0.2);
+  img {
+    width: 225px;
+  }
+  .basketCard--content {
+    h2 {
+      font-size: 25px;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 400;
+    }
+    p {
+      font-size: 25px;
+      color: rgba(136, 136, 136, 1);
+      font-weight: 400;
+      width: 691px;
+      line-height: 30px;
+      margin: 7px 0;
+    }
+    .basketCard--content__color {
+      display: flex;
+      align-items: center;
+      h3 {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-weight: 400;
+        gap: 10px;
+        .basketCard--content__color--circle {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+      }
+      .basketCard--content__color--btns {
+        margin-left: 60%;
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        gap: 10px;
+        button {
+          width: 36px;
+          height: 36px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 36px;
+          color: rgba(0, 0, 0, 1);
+          font-weight: 400;
+          background-color: rgba(235, 242, 249, 1);
+          border: none;
+          outline: none;
+          box-shadow: 16px 4px 64px 0px rgba(18, 61, 101, 0.2);
+        }
+        span {
+          font-size: 25px;
+          font-weight: 400;
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: rgba(136, 136, 136, 1);
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+  .basketCard--price {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 15%;
+    .basketCard--price__starts {
+      position: absolute;
+      top: -60px;
+      right: -16px;
+      display: flex;
+      
+      .basketCard--price__starts--star {
+        cursor: pointer;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+      }
+    }
+    h4 {
+      font-size: 30px;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 600;
+      margin: 28px 0;
+    }
+    h5 {
+      font-size: 20px;
+      color: rgba(82, 82, 82, 1);
+      font-weight: 400;
+      margin-bottom: -15px;
+      text-decoration: line-through;
+      text-decoration-thickness: 0.1px;
+    }
+  }
+}
+.basketCard:hover {
+  border: 3px solid rgba(255, 255, 255, 1);
+}
