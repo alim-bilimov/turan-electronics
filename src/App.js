@@ -4,10 +4,12 @@ import MainRoutes from "./routes/MainRoutes";
 
 function App() {
   return (
-    <div className="App">
+    <body>
+      <div className="App">
       <Header />
       <MainRoutes />
     </div>
+    </body>
   );
 }
 
