@@ -1,5 +1,9 @@
 @import "./components/header/header.scss";
 @import "./pages/main/main.scss";
+@import './pages/Basket/Basket.scss';
+@import './pages/Basket/BasketCard/BasketCard.scss';
+@import './pages/Basket/BasketCard/Delivery/Delivery.scss';
+@import './pages/Basket/BasketCard/Delivery/WayToPay/WayToPay.scss';
 
 * {
   margin: 0;
@@ -13,4 +17,8 @@
 }
 a {
   text-decoration: none;
+}
+
+body {
+ background:  rgba(235, 242, 249, 1);
 }
