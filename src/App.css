@@ -4,6 +4,8 @@
 @import './pages/Basket/BasketCard/BasketCard.scss';
 @import './pages/Basket/BasketCard/Delivery/Delivery.scss';
 @import './pages/Basket/BasketCard/Delivery/WayToPay/WayToPay.scss';
+@import './pages/Favorite/Favorite.scss';
+@import './pages/Favorite/FavoriteCard/FavoriteCard.scss';
 
 * {
   margin: 0;
