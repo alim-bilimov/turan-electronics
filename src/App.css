@@ -1,11 +1,21 @@
 @import "./components/header/header.scss";
 @import "./pages/main/main.scss";
+
+@import "./pages/Basket/Basket.scss";
+@import "./pages/Basket/BasketCard/BasketCard.scss";
+@import "./pages/Basket/BasketCard/Delivery/Delivery.scss";
+@import "./pages/Basket/BasketCard/Delivery/WayToPay/WayToPay.scss";
+@import "./components/Footer/Footer.scss";
+@import "./pages/News/News.scss";
+@import "./pages/Admin/admin.scss";
+
 @import './pages/Basket/Basket.scss';
 @import './pages/Basket/BasketCard/BasketCard.scss';
 @import './pages/Basket/BasketCard/Delivery/Delivery.scss';
 @import './pages/Basket/BasketCard/Delivery/WayToPay/WayToPay.scss';
 @import './pages/Favorite/Favorite.scss';
 @import './pages/Favorite/FavoriteCard/FavoriteCard.scss';
+
 
 * {
   margin: 0;
