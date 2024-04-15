@@ -1,0 +1,133 @@
+.favoriteCard {
+  width: 22%;
+  height: 552px;
+  border-radius: 24px;
+  background: linear-gradient(210.55deg, #ebf2f9 19.14%, #c6d7eb 154.68%);
+  box-shadow: 16px 4px 64px 0px rgba(18, 61, 101, 0.2);
+  border: 1px solid #ebf2f9;
+  border-image-source: linear-gradient(
+    123.5deg,
+    #ffffff 38.36%,
+    rgba(219, 230, 242, 0) 69.31%,
+    #8f9fae 131.91%
+  );
+  padding: 24px;
+  .favoriteCard--stars {
+    display: flex;
+    justify-content: flex-end;
+    .favoriteCard--stars__star {
+      clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      width: 20px;
+      height: 20px;
+      background-color: grey;
+    }
+  }
+  img {
+    width: 182px;
+    height: 170px;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-right: 25%;
+    margin-bottom: 30px;
+  }
+  .favoriteCard--heart {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    svg {
+      width: 35px;
+      height: 25px;
+      color: rgba(255, 115, 0, 1);
+    }
+  }
+  .favoriteCard--discount {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+    }
+    h5 {
+      font-size: 16px;
+      color: rgba(136, 136, 136, 1);
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+  }
+  .favoriteCard--ecenomy {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 7px 0;
+    :first-child {
+      font-size: 13px;
+      background: rgba(255, 115, 0, 0.68);
+      font-weight: 500;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    :last-child {
+      font-size: 13px;
+      background-color: rgba(255, 255, 255, 0.6);
+      font-weight: 500;
+      padding: 8px 5px;
+      border-radius: 5px;
+    }
+  }
+  strong {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 14px;
+    color: rgba(136, 136, 136, 1);
+    width: 234px;
+    margin: 6px 0 20px 0;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .favoriteCard--order {
+    display: flex;
+    align-items: center;
+    gap: 33%;
+    button {
+      width: 183px;
+      height: 30px;
+      border-radius: 16px;
+      border: none;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 1);
+      background: rgba(227, 237, 247, 1);
+    }
+    svg {
+      width: 22.69px;
+      height: 30px;
+    }
+  }
+  .favoriteCard--color {
+    p {
+        color:black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .favoriteCard--color__circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+    }
+  }
+}
