@@ -1,0 +1,80 @@
+#favorite {
+  padding: 0 0 80px 0;
+  .favorite {
+    padding-bottom: 60px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 50px 0 20px 0;
+      color: rgba(136, 136, 136, 1);
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      margin: 10px 0 60px 0;
+    }
+    .favorite--emptyCard {
+      width: 100%;
+      height: 219px;
+      background: linear-gradient(210.55deg, #ebf2f9 19.14%, #c6d7eb 154.68%);
+      box-shadow: 16px 4px 64px 0px rgba(18, 61, 101, 0.2);
+      box-shadow: -8px -6px 80px 0px rgba(255, 255, 255, 0.18) inset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
+      border: 1px solid;
+      border-image-source: linear-gradient(
+        123.5deg,
+        #ffffff 38.36%,
+        rgba(219, 230, 242, 0) 69.31%,
+        #8f9fae 131.91%
+      );
+      box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      border-radius: 44px;
+      margin-bottom: 60px;
+
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .favorite--cards {
+      position: relative;
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-size: 18px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        font-weight: 400;
+        width: 140px;
+        border-bottom: 1px dashed black;
+      }
+      .favorite--cards__card {
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px;
+      }
+    }
+    .favorite--orderAll {
+      float: right;
+      background: rgba(227, 237, 247, 1);
+      box-shadow: 4px 2px 16px 0px rgba(136, 165, 191, 0.48);
+      width: 255px;
+      font-size: 18px;
+      height: 40px;
+      border-radius: 16px;
+      box-shadow: -4px -2px 16px 0px rgba(255, 255, 255, 1);
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+#news {
+  padding-top: 50px;
+  .news {
+    a {
+      font-family: Montserrat;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: left;
+      color: #888888;
+    }
+    .news--cardAll {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      align-items: center;
+      gap: 50px;
+      .news--boxCard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 470px;
+        height: 920px;
+        background-color: #ffffff99;
+        border-radius: 50px;
+        position: relative;
+        padding: 10px 15px;
+        img {
+          object-fit: cover;
+          margin-top: -28px;
+          object-position: 0;
+          position: absolute;
+        }
+        .news--saleImg {
+          position: relative;
+          top: -285px;
+        }
+        h1 {
+          position: absolute;
+          z-index: 2;
+          top: 30px;
+          left: 30px;
+          font-family: Montserrat;
+          font-size: 27px;
+          font-weight: 600;
+          line-height: 35px;
+          text-align: left;
+          color: #000000;
+        }
+        .news--boxText {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 10px;
+          border-radius: 20px;
+          background-color: rgba(255, 255, 255, 0.729);
+          opacity: 80%;
+          width: 400px;
+          height: 120px;
+          top: 700px;
+          h3 {
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            color: #000000;
+          }
+        }
+      }
+      .news--boxCardTwo {
+        width: 570px;
+        height: 980px;
+        background: url("../../image/New\ produc\ news.png") no-repeat
+          center/cover;
+        border-radius: 50px;
+
+        background-size: 600px;
+
+        top: 200px;
+        &:hover {
+          transform: scale(1px);
+        }
+      }
+      .news--boxCardthree {
+        padding: 10px 20px;
+        .news--new {
+          width: 490px;
+          border-radius: 30px;
+          object-fit: cover;
+          height: 870px;
+        }
+        .news--boxText {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 460px;
+          height: 100px;
+          background-color: #ffffff99;
+          border-radius: 35px;
+          position: relative;
+          padding: 10px 10px;
+          position: absolute;
+          top: 45pc;
+          margin: 10px 20px;
+
+          h3 {
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

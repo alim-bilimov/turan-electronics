@@ -1,0 +1,152 @@
+#admin {
+  padding-top: 40px;
+  .admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      margin: 20px 0px;
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+    }
+    .admin--card {
+      padding: 29px 25px;
+      width: 990px;
+      height: 773px;
+      top: 429px;
+      left: 260px;
+      gap: 0px;
+      border-radius: 24px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      margin-top: 50px;
+      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
+      border: 1px solid;
+
+      border-image-source: linear-gradient(
+        123.5deg,
+        #ffffff 38.36%,
+        rgba(219, 230, 242, 0) 69.31%,
+        #8f9fae 131.91%
+      );
+
+      box-shadow: 18px -10px 127px -3px rgba(18, 61, 101, 0.44);
+      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      border-radius: 44px;
+      h3 {
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+      }
+      .admin--cardInput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+        .input {
+          margin-top: 20px;
+          width: 420px;
+          height: 60px;
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          background-color: #eaf0f6;
+          box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+        }
+        .input--icons {
+          margin-top: 20px;
+          width: 420px;
+          height: 60px;
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          background-color: #eaf0f6;
+          box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+          display: flex;
+          align-items: center;
+          input {
+            width: 420px;
+            height: 60px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 20px;
+          }
+          .eye {
+            cursor: pointer;
+          }
+        }
+        .h3--pass {
+          font-size: 20px;
+          margin-left: 225px;
+          border-bottom: solid 1px black;
+        }
+
+        button {
+          color: #090909;
+          padding: 0.7em 1.7em;
+          font-size: 23px;
+          border-radius: 0.5em;
+          background: #e0e9f2;
+          cursor: pointer;
+          border: 1px solid #e8e8e8;
+          transition: all 1s;
+          box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
+          &:active {
+            color: #666;
+            box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
+          }
+        }
+        .admin--text {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-top: 20px;
+          h4 {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+          }
+          a {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            color: #ff7300;
+            border-bottom: solid 1px #ff7300;
+          }
+        }
+        .img--admin {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+        }
+        .admin--registration {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
