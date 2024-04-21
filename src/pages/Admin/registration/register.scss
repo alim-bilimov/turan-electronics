@@ -1,34 +1,7 @@
 #admin {
-  padding-top: 40px;
-  a {
-    font-family: Montserrat;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 60px;
-    text-align: left;
-    color: #888888;
-    &:hover {
-      color: #090909;
-      border-bottom: solid 1px #090909;
-    }
-  }
   .admin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    h1 {
-      margin: 20px 0px;
-      font-family: Montserrat;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 24px;
-      text-align: center;
-    }
-    .admin--card {
-      padding: 29px 25px;
-      width: 990px;
-      height: 773px;
+    .admin--cards {
+      padding: 90px 105px;
       top: 429px;
       left: 260px;
       gap: 0px;
@@ -156,95 +129,6 @@
           img {
             width: 40px;
             cursor: pointer;
-          }
-        }
-      }
-    }
-    .sign--card {
-      padding: 50px 30px;
-      width: 1000px;
-      height: 773px;
-
-      top: 429px;
-      left: 260px;
-      gap: 0px;
-      border-radius: 24px 0px 0px 0px;
-      border: 1px 0px 0px 0px;
-      opacity: 0px;
-      margin-top: 50px;
-      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
-      border: 1px solid;
-      border-image-source: linear-gradient(
-        123.5deg,
-        #ffffff 38.36%,
-        rgba(219, 230, 242, 0) 69.31%,
-        #8f9fae 131.91%
-      );
-
-      box-shadow: 18px -10px 127px -3px rgba(18, 61, 101, 0.44);
-      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
-      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
-      border-radius: 44px;
-      .exit-btn {
-        color: #090909;
-        padding: 0.7em 1.7em;
-        font-size: 23px;
-        border-radius: 0.5em;
-        background: #e0e9f2;
-        cursor: pointer;
-        border: 1px solid #e8e8e8;
-        transition: all 1s;
-        box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
-        &:active {
-          color: #666;
-          box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
-        }
-      }
-      .sign--all {
-        display: flex;
-        align-items: center;
-        gap: 120px;
-        .sign--text {
-          gap: 50px;
-          display: flex;
-          align-items: start;
-          flex-direction: column;
-        }
-        .sign--profile {
-          display: flex;
-          align-items: start;
-          flex-direction: column;
-          gap: 50px;
-          h1 {
-            border-bottom: solid 1px #090909;
-            height: -3px;
-            width: Hug (568px) px;
-            height: Hug (328px) px;
-            top: 60px;
-            left: 50px;
-            gap: 70px;
-            opacity: 0px;
-          }
-        }
-      }
-      .profile-btn {
-        margin-top: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        button {
-          color: #090909;
-          padding: 0.7em 1.7em;
-          font-size: 23px;
-          border-radius: 0.5em;
-          background: #e0e9f2;
-          cursor: pointer;
-          border: 1px solid #e8e8e8;
-          transition: all 1s;
-          box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
-          &:active {
-            color: #666;
-            box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
           }
         }
       }

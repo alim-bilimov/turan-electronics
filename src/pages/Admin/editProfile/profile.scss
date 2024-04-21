@@ -1,0 +1,101 @@
+#profile {
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .profile--card {
+      padding: 30px 50px;
+      width: 1000px;
+      height: 773px;
+
+      top: 429px;
+      left: 260px;
+      gap: 0px;
+      border-radius: 24px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      margin-top: 50px;
+      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
+      border: 1px solid;
+      border-image-source: linear-gradient(
+        123.5deg,
+        #ffffff 38.36%,
+        rgba(219, 230, 242, 0) 69.31%,
+        #8f9fae 131.91%
+      );
+
+      box-shadow: 18px -10px 127px -3px rgba(18, 61, 101, 0.44);
+      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      border-radius: 44px;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 50px;
+      .box {
+        h5 {
+          font-family: Montserrat;
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+        }
+        input {
+          margin-top: 20px;
+          width: 380px;
+          height: 58px;
+          font-size: 20px;
+          padding: 15px;
+          border-radius: 15px;
+          border: none;
+          outline: none;
+          background-color: #eaf0f6;
+          box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+        }
+        .select {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          select {
+            margin-top: 20px;
+
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            background-color: #eaf0f6;
+            box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+          }
+        }
+      }
+      .profile--edit {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        .boxes {
+          display: flex;
+          align-items: center;
+          margin-top: 40px;
+          gap: 40px;
+          button {
+            color: #090909;
+            padding: 0.7em 1.7em;
+            font-size: 15px;
+            border-radius: 0.9em;
+            background: #e0e9f2;
+            cursor: pointer;
+            border: 1px solid #e8e8e8;
+            transition: all 1s;
+            box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
+            &:active {
+              color: #666;
+              box-shadow: inset 4px 4px 12px #eff4fd,
+                inset -4px -4px 12px #eff4fd;
+            }
+          }
+        }
+      }
+    }
+  }
+}

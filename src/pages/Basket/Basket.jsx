@@ -2,6 +2,7 @@ import React from "react";
 import Basketcard from "./BasketCard/Basketcard";
 import Delivery from "./BasketCard/Delivery/Delivery";
 import WayToPay from "./BasketCard/Delivery/WayToPay/WayToPay";
+import { Link } from "react-router-dom";
 
 const fakeData = [
   {
@@ -27,12 +28,13 @@ const fakeData = [
 ];
 
 const Basket = () => {
-
   return (
     <div id="basket">
       <div className="container">
         <div className="basket">
-          <h3>Главная / Каталог / Корзина</h3>
+          <Link to="/">Главная /</Link>
+          <Link to="/catalog"> Каталог /</Link>
+          <Link to="/basket"> Корзина</Link>
           <div className="basket--emptycard">
             <p>Ваша корзина пуста</p>
           </div>
@@ -54,10 +56,14 @@ const Basket = () => {
               <h1>Способ получения</h1>
               <span>У меня есть аккаунт</span>
               <div className="basket--cardIsFull__wayToGet--inputs">
-                <input type="text" placeholder="Фамилия и имя  *" className="basket--cardIsFull__wayToGet--inputs__name"/>
+                <input
+                  type="text"
+                  placeholder="Фамилия и имя  *"
+                  className="basket--cardIsFull__wayToGet--inputs__name"
+                />
                 <div className="basket--cardIsFull__wayToGet--inputs__down">
-                  <input type="text" placeholder="Телефон *"/>
-                  <input type="email" placeholder="Email"/>
+                  <input type="text" placeholder="Телефон *" />
+                  <input type="email" placeholder="Email" />
                 </div>
               </div>
               <div className="basket--cardIsFull__wayToGet--signUpBtn">
@@ -66,8 +72,8 @@ const Basket = () => {
               </div>
             </div>
           </div>
-          <Delivery/>
-          <WayToPay/>
+          <Delivery />
+          <WayToPay />
         </div>
       </div>
     </div>
