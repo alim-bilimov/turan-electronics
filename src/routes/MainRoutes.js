@@ -7,6 +7,8 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
+import Register from "../pages/Admin/registration";
+import Profile from "../pages/Admin/editProfile";
 
 const MainRoutes = () => {
   const PUBLIC = [
@@ -17,6 +19,8 @@ const MainRoutes = () => {
     { path: "/admin", element: <Admin />, key: 5 },
     { path: "/basket", element: <Basket />, key: 6 },
     { path: "/favorite", element: <Favorite />, key: 7 },
+    { path: "/register", element: <Register />, key: 8 },
+    { path: "/profile", element: <Profile />, key: 9 },
   ];
 
   return (
