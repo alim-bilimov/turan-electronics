@@ -3,7 +3,6 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { FaHeart } from "react-icons/fa";
 
 const Favioritecard = ({ data }) => {
-    console.log(data.description.length);
   return (
     <div className="favoriteCard">
       <div className="favoriteCard--stars">

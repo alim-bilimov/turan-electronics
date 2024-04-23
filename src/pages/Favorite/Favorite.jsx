@@ -1,5 +1,6 @@
 import React from "react";
 import Favioritecard from "./FavoriteCard/Favioritecard";
+import ProductDetails from "../ProductDetails/ProductDetails";
 import { Link } from "react-router-dom";
 
 const fake_data = [
@@ -78,6 +79,7 @@ const Favorite = () => {
           </div>
           <button className="favorite--orderAll">Оформить заказ</button>
         </div>
+        <ProductDetails/>
       </div>
     </div>
   );
