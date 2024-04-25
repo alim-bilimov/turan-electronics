@@ -24,6 +24,8 @@
 
 @import "./pages/Admin/registration/register.scss";
 @import "./pages/Admin/editProfile/profile.scss";
+@import "./pages/amdinTwo/adminTwo.scss";
+@import "./pages/Admin/mediaAdmin.scss";
 
 * {
   margin: 0;

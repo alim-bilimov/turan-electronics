@@ -9,6 +9,8 @@ import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
 import Register from "../pages/Admin/registration";
 import Profile from "../pages/Admin/editProfile";
+import { element } from "prop-types";
+import Create from "../pages/amdinTwo";
 
 const MainRoutes = () => {
   const PUBLIC = [
@@ -21,6 +23,7 @@ const MainRoutes = () => {
     { path: "/favorite", element: <Favorite />, key: 7 },
     { path: "/register", element: <Register />, key: 8 },
     { path: "/profile", element: <Profile />, key: 9 },
+    { path: "/turan", element: <Create />, key: 10 },
   ];
 
   return (

@@ -10,9 +10,15 @@ import { useMainContext } from "../../../context/MainContext";
 import { auth } from "../../../firebase";
 
 const Register = () => {
-  const { createUser, googleSign, facebookSign, errors } = useMainContext();
-  const [eye, setEye] = useState(false);
+  const { createUser, googleSign, facebookSign, errors, valid } =
+    useMainContext();
+
   const [password, setPassword] = useState(false);
+  const [lastValid, setLastValid] = useState(false);
+  const [emailValid, setEmailValid] = useState(false);
+
+  const [eye, setEye] = useState(false);
+  const [passw, setPassw] = useState(false);
   const [error, setError] = useState("");
   const [values, setValues] = useState({
     name: "",
@@ -37,7 +43,6 @@ const Register = () => {
         againPass: "",
       });
     } else {
-      alert("неправильный пароль!!!");
     }
   }
 
@@ -73,6 +78,7 @@ const Register = () => {
               </h3>
               <div className="admin--cardInput">
                 <input
+                  style={{ border: valid ? "solid 1px red" : "" }}
                   onChange={getChangeInput}
                   className="input"
                   type="text"
@@ -81,6 +87,9 @@ const Register = () => {
                   value={values.name}
                 />
                 <input
+                  style={{
+                    border: valid ? "solid 1px red" : "",
+                  }}
                   onChange={getChangeInput}
                   type="text"
                   className="input"
@@ -89,6 +98,7 @@ const Register = () => {
                   value={values.lastName}
                 />
                 <input
+                  style={{ border: valid ? "solid 1px red" : "" }}
                   onChange={getChangeInput}
                   type="text"
                   className="input
@@ -97,7 +107,13 @@ const Register = () => {
                   name="email"
                   value={values.email}
                 />
-                <div className="input--icons">
+                <div
+                  style={{
+                    border: password ? " solid 1px red" : "",
+                    border: valid ? "solid 1px red" : "",
+                  }}
+                  className="input--icons"
+                >
                   <input
                     onChange={getChangeInput}
                     type={eye ? "text" : "password"}
@@ -111,7 +127,7 @@ const Register = () => {
                     }}
                     className="eye"
                     style={{
-                      fontSize: "30px",
+                      fontSize: "20px",
                       display: eye ? "none" : "block",
                     }}
                   />
@@ -121,51 +137,68 @@ const Register = () => {
                     }}
                     style={{
                       display: eye ? "block" : "none",
-                      fontSize: "30px",
+                      fontSize: "20px",
                     }}
                   />
                 </div>
-                <div className="input--icons">
+                <p className="p-valid">
+                  {password ? "Пароли не совпадают!!!" : ""}
+                </p>
+                <div
+                  style={{
+                    border: password ? "solid 1px red" : "",
+                    border: valid ? "solid 1px red" : "",
+                  }}
+                  className="input--icons"
+                >
                   <input
                     onChange={getChangeInput}
-                    type={eye ? "text" : "password"}
+                    type={passw ? "text" : "password"}
                     placeholder="Повторите Пароль"
                     name="againPass"
                     value={values.againPass}
                   />
                   <IoMdEyeOff
                     onClick={() => {
-                      setEye(true);
+                      setPassw(true);
                     }}
                     className="eye"
                     style={{
-                      fontSize: "30px",
-                      display: eye ? "none" : "block",
+                      fontSize: "20px",
+                      display: passw ? "none" : "block",
                     }}
                   />
                   <IoIosEye
+                    className="eye"
                     onClick={() => {
-                      setEye(false);
+                      setPassw(false);
                     }}
                     style={{
-                      display: eye ? "block" : "none",
-                      fontSize: "30px",
+                      fontSize: "20px",
+                      display: passw ? "block" : "none",
                     }}
                   />
                 </div>
-                <h3 className="h3--pass">Забыли пароль?</h3>
+                <p className="valids">{valid ? "заполните все поле!!!" : ""}</p>
+                <p className="p-valid">
+                  {password ? "Пароли не совпадают!!!" : ""}
+                </p>
+
                 <h3>{errors}</h3>
 
                 <button
                   onClick={() => {
+                    if (values.pass != values.againPass) {
+                      setPassword(true);
+                    }
                     handleChange();
                   }}
                 >
                   Регистрация
                 </button>
                 <div className="admin--text">
-                  <h4>Впервые у нас?</h4>
-                  <Link to="/admin">У вас уже есть аккаунт?</Link>
+                  <h4>У вас уже есть аккаунт?</h4>
+                  <Link to="/admin">Войти</Link>
                 </div>
                 <div className="img--admin">
                   <img src={adminBox} alt="" />

@@ -36,8 +36,10 @@ const Admin = () => {
     <div>
       <div id="admin">
         <div className="container">
-          <Link>Главная /</Link>
-          <Link> Мой профиль</Link>
+          <div className="admin-link">
+            <Link to="/">Главная /</Link>
+            <Link> Мой профиль</Link>
+          </div>
           <div className="admin">
             <center>
               {" "}

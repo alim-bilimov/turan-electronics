@@ -1,0 +1,186 @@
+#create {
+  h1 {
+    font-family: Montserrat;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 90px;
+    border-bottom: solid 1px white;
+  }
+  .create {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .input--box {
+      padding: 29px 25px;
+      width: 990px;
+      height: 773px;
+      top: 429px;
+      left: 260px;
+      gap: 0px;
+      border-radius: 24px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      margin-top: 50px;
+      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
+      border: 1px solid;
+
+      border-image-source: linear-gradient(
+        123.5deg,
+        #ffffff 38.36%,
+        rgba(219, 230, 242, 0) 69.31%,
+        #8f9fae 131.91%
+      );
+
+      box-shadow: 18px -10px 127px -3px rgba(18, 61, 101, 0.44);
+      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      border-radius: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+      input {
+        margin-top: 20px;
+        width: 420px;
+        height: 60px;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background-color: #eaf0f6;
+        box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+      }
+
+      .div-2 {
+        margin-top: 40px;
+        color: #090909;
+        padding: 0.7em 1.7em;
+        letter-spacing: 4px;
+        font-size: 22px;
+        border-radius: 0.5em;
+        background: #e0e9f2;
+        cursor: pointer;
+        border: 1px solid #e8e8e8;
+        transition: all 1s;
+        box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
+        &:active {
+          color: #666;
+          box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
+        }
+      }
+    }
+    .loading {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.dot-spinner {
+  --uib-size: 1.8rem;
+  --uib-speed: 0.9s;
+  --uib-color: #ff7300;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: var(--uib-size);
+  width: var(--uib-size);
+}
+
+.dot-spinner__dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.dot-spinner__dot::before {
+  content: "";
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  transform: scale(0);
+  opacity: 0.5;
+  animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+}
+
+.dot-spinner__dot:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.dot-spinner__dot:nth-child(2)::before {
+  animation-delay: calc(var(--uib-speed) * -0.875);
+}
+
+.dot-spinner__dot:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.dot-spinner__dot:nth-child(3)::before {
+  animation-delay: calc(var(--uib-speed) * -0.75);
+}
+
+.dot-spinner__dot:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+.dot-spinner__dot:nth-child(4)::before {
+  animation-delay: calc(var(--uib-speed) * -0.625);
+}
+
+.dot-spinner__dot:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+.dot-spinner__dot:nth-child(5)::before {
+  animation-delay: calc(var(--uib-speed) * -0.5);
+}
+
+.dot-spinner__dot:nth-child(6) {
+  transform: rotate(225deg);
+}
+
+.dot-spinner__dot:nth-child(6)::before {
+  animation-delay: calc(var(--uib-speed) * -0.375);
+}
+
+.dot-spinner__dot:nth-child(7) {
+  transform: rotate(270deg);
+}
+
+.dot-spinner__dot:nth-child(7)::before {
+  animation-delay: calc(var(--uib-speed) * -0.25);
+}
+
+.dot-spinner__dot:nth-child(8) {
+  transform: rotate(315deg);
+}
+
+.dot-spinner__dot:nth-child(8)::before {
+  animation-delay: calc(var(--uib-speed) * -0.125);
+}
+
+@keyframes pulse0112 {
+  0%,
+  100% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

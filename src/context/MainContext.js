@@ -11,6 +11,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const MyContext = createContext();
 export const useMainContext = () => useContext(MyContext);
@@ -20,6 +21,7 @@ const MainContext = ({ children }) => {
 
   const [user, setUser] = useState("");
   const [errors, setErrors] = useState("");
+  const [valid, setValid] = useState(false);
 
   const googleAuthProvider = new GoogleAuthProvider();
   const FacebookProvaider = new FacebookAuthProvider();
@@ -34,6 +36,7 @@ const MainContext = ({ children }) => {
         navigate("/admin");
       });
     } catch (error) {
+      setValid(true);
       setErrors(error.message);
     }
   }
@@ -67,6 +70,7 @@ const MainContext = ({ children }) => {
     googleSign,
     facebookSign,
     errors,
+    valid,
   };
 
   return <MyContext.Provider value={values}>{children}</MyContext.Provider>;
