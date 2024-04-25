@@ -47,7 +47,7 @@ const Header = () => {
                 </NavLink>
                 <NavLink to="/basket">
                   <button>
-                    <CiShoppingBasket />
+                    <CiShoppingBasket style={{ fontSize: "20px" }} />
                   </button>
                 </NavLink>
                 <NavLink to="/admin">
