@@ -10,6 +10,8 @@ import Main from "../pages/Main/Main";
 import Profile from "../pages/Admin/editProfile";
 import { element } from "prop-types";
 import Create from "../pages/amdinTwo";
+
+const MainRoutes = () => {
   const PUBLIC = [
     { path: "/", element: <Main />, key: 1 },
     { path: "/category", element: <Category />, key: 2 },
