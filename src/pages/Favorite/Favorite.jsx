@@ -1,5 +1,7 @@
 import React from "react";
 import Favioritecard from "./FavoriteCard/Favioritecard";
+import ProductDetails from "../ProductDetails/ProductDetails";
+import { Link } from "react-router-dom";
 
 const fake_data = [
   {
@@ -59,7 +61,10 @@ const Favorite = () => {
     <div id="favorite">
       <div className="container">
         <div className="favorite">
-          <h3>Главная / Избранное</h3>
+          <div className="link--route">
+            <Link to="/">Главное /</Link>
+            <Link to="/favorite"> Избранное</Link>
+          </div>
           <h1>Избранное</h1>
           <div className="favorite--emptyCard">
             <h2>Пусто</h2>
@@ -74,6 +79,7 @@ const Favorite = () => {
           </div>
           <button className="favorite--orderAll">Оформить заказ</button>
         </div>
+        <ProductDetails/>
       </div>
     </div>
   );

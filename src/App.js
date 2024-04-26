@@ -5,13 +5,11 @@ import MainRoutes from "./routes/MainRoutes";
 
 function App() {
   return (
-    <body>
-      <div className="App">
-        <Header />
-        <MainRoutes />
-        <Footer />
-      </div>
-    </body>
+    <div className="App">
+      <Header />
+      <MainRoutes />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,0 +1,463 @@
+#admin {
+  .admin {
+    .admin--cards {
+      padding: 90px 105px;
+      top: 429px;
+      left: 260px;
+      gap: 0px;
+      border-radius: 24px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      margin-top: 50px;
+      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
+      border: 1px solid;
+
+      border-image-source: linear-gradient(
+        123.5deg,
+        #ffffff 38.36%,
+        rgba(219, 230, 242, 0) 69.31%,
+        #8f9fae 131.91%
+      );
+
+      box-shadow: 18px -10px 127px -3px rgba(18, 61, 101, 0.44);
+      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
+      border-radius: 44px;
+      .p-valid {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+        color: red;
+      }
+      .valids {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+        color: red;
+      }
+      h3 {
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: center;
+      }
+      .admin--cardInput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+        .input {
+          margin: 20px 0;
+
+          width: 420px;
+          height: 60px;
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          background-color: #eaf0f6;
+          box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+        }
+        .input--icons {
+          width: 420px;
+          height: 60px;
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 50px;
+          border: none;
+          outline: none;
+          background-color: #eaf0f6;
+          box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+          display: flex;
+          align-items: center;
+          input {
+            width: 420px;
+            height: 60px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 20px;
+          }
+          .eye {
+            cursor: pointer;
+          }
+        }
+        .h3--pass {
+          font-size: 20px;
+          margin-left: 225px;
+          border-bottom: solid 1px black;
+        }
+
+        button {
+          margin-bottom: 10px;
+          color: #090909;
+          padding: 0.7em 1.7em;
+          font-size: 23px;
+          border-radius: 0.5em;
+          background: #e0e9f2;
+          cursor: pointer;
+          border: 1px solid #e8e8e8;
+          transition: all 1s;
+          box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
+          &:active {
+            color: #666;
+            box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
+          }
+        }
+        .admin--text {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          margin-top: 20px;
+          h4 {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+          }
+          a {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            color: #ff7300;
+            border-bottom: solid 1px #ff7300;
+          }
+        }
+        .img--admin {
+          display: flex;
+          align-items: center;
+          gap: 35px;
+        }
+        .admin--registration {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #admin {
+    .admin {
+      h1 {
+        font-size: 34px;
+      }
+      .admin--card {
+        background-color: red;
+        padding: 90px 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #admin {
+    .admin-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: 25px;
+      }
+    }
+    .admin {
+      margin: 10px 30px;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .admin--cards {
+        background-color: red;
+        padding: 50px 50px;
+        margin-top: 15px;
+        border-radius: 20px;
+
+        h3 {
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        .admin--cardInput {
+          margin-top: 20px;
+          gap: 10px;
+          button {
+            font-size: 28px;
+          }
+          .input {
+            width: 350px;
+            height: 40px;
+            font-size: 20px;
+            padding: 23px;
+          }
+          .input--icons {
+            margin-top: 20px;
+            width: 350px;
+            height: 40px;
+            font-size: 2px;
+            padding: 23px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: #eaf0f6;
+            box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+            display: flex;
+            align-items: center;
+
+            input {
+              width: 350px;
+              height: 40px;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              font-size: 220x;
+            }
+            .eye {
+              font-size: 10px;
+            }
+          }
+          .h3--pass {
+            font-size: 10px;
+            margin-left: 130px;
+          }
+          button {
+            font-size: 20px;
+            padding: 0.7em 1.5em;
+          }
+
+          .admin--text {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 22px;
+              line-height: 22px;
+            }
+          }
+          .img--admin {
+            gap: 25px;
+            img {
+              margin: 10px 0px;
+              width: 33px;
+            }
+          }
+          .admin--registration {
+            img {
+              margin: 10px 0;
+              width: 38px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #admin {
+    .admin {
+      .admin--cards {
+        h3 {
+          font-size: 20px;
+        }
+        padding: 80px 50px;
+        .admin--cardInput {
+          .input {
+            font-size: 18px;
+          }
+          .input--icons {
+            input {
+              font-size: 18px;
+            }
+          }
+          button {
+            font-size: 18px;
+          }
+          .admin--text {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  #admin {
+    .admin-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: 25px;
+      }
+    }
+    .admin {
+      margin: 10px 30px;
+
+      h1 {
+        font-size: 19px;
+      }
+
+      .admin--cards {
+        background-color: red;
+        padding: 30px 20px;
+        margin-top: 15px;
+        border-radius: 20px;
+
+        h3 {
+          font-size: 12px;
+          line-height: 14px;
+        }
+
+        .admin--cardInput {
+          margin-top: 20px;
+          gap: 10px;
+          button {
+            font-size: 18px;
+          }
+          .input {
+            width: 230px;
+            height: 15px;
+            font-size: 12px;
+            padding: 18px;
+          }
+          .input--icons {
+            margin-top: 20px;
+            width: 230px;
+            height: 10px;
+            font-size: 2px;
+            padding: 18px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: #eaf0f6;
+            box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+            display: flex;
+            align-items: center;
+
+            input {
+              width: 230px;
+              height: 20px;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              font-size: 12px;
+            }
+            .eye {
+              font-size: 19px;
+            }
+          }
+          .h3--pass {
+            font-size: 13px;
+            margin-left: 130px;
+          }
+          button {
+            font-size: 12px;
+            padding: 0.7em 1.5em;
+          }
+
+          .admin--text {
+            h4 {
+              font-size: 13px;
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+          .img--admin {
+            img {
+              margin: 10px 0px;
+              width: 15px;
+            }
+          }
+          .admin--registration {
+            img {
+              width: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #admin {
+    .admin {
+      h1 {
+        font-size: 25px;
+      }
+      .admin--cards {
+        h3 {
+          font-size: 13.4px;
+        }
+        padding: 30px 30px;
+        .admin--cardInput {
+          button {
+            font-size: 14px;
+          }
+          .h3--pass {
+            font-size: 15px;
+            margin-left: 150px;
+          }
+          .input {
+            font-size: 15px;
+            width: 300px;
+            height: 40px;
+          }
+          .input--icons {
+            width: 300px;
+            height: 40px;
+            input {
+              font-size: 15px;
+            }
+          }
+          .admin--text {
+            h4 {
+              font-size: 14px;
+            }
+            a {
+              font-size: 15px;
+            }
+          }
+          .img--admin {
+            img {
+              width: 24px;
+            }
+          }
+          .admin--registration {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+              width: 30px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
