@@ -1,5 +1,4 @@
 import React from "react";
-import Main from "../pages/main";
 import { Routes, Route } from "react-router-dom";
 import Admin from "../pages/Admin/Admin";
 import AboutUs from "../pages/AboutUs/AboutUs";
@@ -7,6 +6,7 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
+import Main from "../pages/Main";
 
 const MainRoutes = () => {
   const PUBLIC = [
