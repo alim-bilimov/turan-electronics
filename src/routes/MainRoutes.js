@@ -6,7 +6,7 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
-import Main from "../pages/Main";
+import Main from "../pages/Main/Main";
 
 const MainRoutes = () => {
   const PUBLIC = [
