@@ -1,5 +1,4 @@
 import React from "react";
-import Main from "../pages/main";
 import { Routes, Route } from "react-router-dom";
 import Admin from "../pages/Admin/Admin";
 import AboutUs from "../pages/AboutUs/AboutUs";
@@ -7,12 +6,10 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
-import Register from "../pages/Admin/registration";
+import Main from "../pages/Main/Main";
 import Profile from "../pages/Admin/editProfile";
 import { element } from "prop-types";
 import Create from "../pages/amdinTwo";
-
-const MainRoutes = () => {
   const PUBLIC = [
     { path: "/", element: <Main />, key: 1 },
     { path: "/category", element: <Category />, key: 2 },
