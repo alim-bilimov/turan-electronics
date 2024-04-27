@@ -45,7 +45,7 @@ console.log(str.length);
 const ProductDetails = () => {
   return (
     <div id="productDetails">
-      <div className="containerr">
+      <div className="container">
         <div className="productDetails">
           <h2>Главная / Каталог / Iphone / Ipnone 14 Pro max</h2>
           <div className="productDetails--card">
