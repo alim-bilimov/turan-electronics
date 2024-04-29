@@ -6,10 +6,11 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
-import Main from "../pages/Main/Main";
 import Profile from "../pages/Admin/editProfile";
 import { element } from "prop-types";
 import Create from "../pages/amdinTwo";
+import Main from "../pages/main/Main";
+import Register from "../pages/Admin/registration";
 
 const MainRoutes = () => {
   const PUBLIC = [

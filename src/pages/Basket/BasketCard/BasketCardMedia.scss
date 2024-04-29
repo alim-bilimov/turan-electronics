@@ -1,0 +1,291 @@
+@media (max-width: 1450px) {
+    .basketCard {
+        img {
+            margin-right: 40px;
+        }
+        .basketCard--text {
+            .basketCard--text__desPrice {
+                .basketCard--text__desPrice--price {
+                    right: -120px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .basketCard {
+        img {
+            margin-right: 10px;
+        }
+        .basketCard--text {
+            .basketCard--text__desPrice {
+                .basketCard--text__desPrice--price {
+                    right: -50px;
+                }
+            }
+            .basketCard--text__colorCount {
+                .basketCard--text__colorCount--count {
+                    margin-left: 20%;
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 1144px) {
+    .basketCard {
+        img {
+            margin-right: 0px;
+        }
+        .basketCard--text {
+            .basketCard--text__desPrice {
+                .basketCard--text__desPrice--price {
+                    right: 20px;
+                }
+            }
+            .basketCard--text__colorCount {
+                .basketCard--text__colorCount--count {
+                    margin-left: 10%;
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 1056px) {
+    .basketCard {
+        img {
+            margin-right: 0px;
+        }
+        .basketCard--text {
+            .basketCard--text__desPrice {
+                p {
+                    display: none;
+                }
+                .basketCard--text__desPrice--price {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    gap: 30px;
+                    top: 0;
+                    right: 0px;
+                }
+            }
+            .basketCard--text__colorCount {
+                .basketCard--text__colorCount--count {
+                    margin-left: 10%;
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 846px){
+    .basketCard  {
+        img {
+            width: 190px;
+        }
+        .basketCard--text {
+            h2 {
+                font-size: 20px;
+            }
+            .basketCard--text__desPrice {
+                .basketCard--text__desPrice--price {
+                    h2 {
+                        font-size: 25px;
+                    }
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .basketCard--text__colorCount {
+                .basketCard--text__colorCount--color {
+                    h3 {
+                        font-size: 20px;
+                    }
+                    .basketCard--text__colorCount--color__cirlce {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 646px) {
+    .basketCard {
+        padding: 30px 10px 10px 10px;
+       .basketCard--stars {
+        .basketCard--stars__star {
+            width: 20px;
+            height: 20px;
+        }
+       } 
+       img {
+        width: 160px;
+       }
+       .basketCard--text {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        h2 {
+            font-size: 17px;
+        }
+        .basketCard--text__colorCount {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            .basketCard--text__colorCount--count {
+                margin-left: 30%;
+            }
+        }
+       }
+    }
+}
+
+@media (max-width: 552px) {
+    .basketCard {
+        .basketCard--text {
+         .basketCard--text__colorCount {
+            .basketCard--text__colorCount--count {
+                margin-left: 10%;
+            }
+         }   
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .basketCard  {
+        padding: 0px;
+        .basketCard--text {
+            h2 {
+                font-size: 14px;
+                width: 160px;
+            }
+            .basketCard--text__desPrice {
+               .basketCard--text__desPrice--price {
+                margin: 15px 0 10px 0;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                h2 {
+                    font-size: 12px;
+                    line-height: 0px;
+                    width: 200px;
+                }
+                h4 {
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                }
+               }
+            }
+            .basketCard--text__colorCount {
+                gap: 10px;
+                .basketCard--text__colorCount--color {
+                    gap: 6px;
+                    h3 {
+                        font-size: 18px;
+                    }
+                    .basketCard--text__colorCount--color__cirlce {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+                .basketCard--text__colorCount--count {
+                    margin-left: 0%;
+                    .basketCard--text__colorCount--count__counter {
+                        button {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                    .basketCard--text__colorCount--count__remove {
+                        a {
+                           svg {
+                            font-size: 17px;
+                           }
+                        }
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .basketCard {
+        height: 210px;
+      .basketCard--stars {
+        top: 10px;
+      }  
+      .basketCard--text {
+        h2 {
+            font-size: 13px;
+        }
+       .basketCard--text__desPrice {
+       .basketCard--text__desPrice--price {
+
+        h2 {
+            font-size: 12px;
+            width: 196px;
+        }
+        h4 {
+            font-size: 10px;
+        }
+       }
+       } 
+       .basketCard--text__colorCount {
+        .basketCard--text__colorCount--color {
+            h3 {
+                font-size: 15px;
+            }
+            .basketCard--text__colorCount--color__cirlce {
+                width: 13px;
+                height: 13px;
+            }
+        }
+        .basketCard--text__colorCount--count {
+            gap: 12px;
+            .basketCard--text__colorCount--count__counter {
+                gap: 5px;
+                button {
+                    width: 24px;
+                    height: 24px;
+                    font-size: 17px;
+                }
+            }
+            .basketCard--text__colorCount--count__remove {
+                gap: 5px;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+       }
+      }  
+    }
+}
+
+@media (max-width: 392px) {
+    .basketCard {
+        height: 170px;
+        padding-top: 20px;
+        .basketCard--stars {
+           .basketCard--stars__star {
+            width: 14px;
+            height: 14px;
+           } 
+        }
+        img{
+            margin-right: 0;
+            width: 110px;
+        }
+    }
+}
