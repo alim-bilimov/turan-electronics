@@ -1,0 +1,154 @@
+@media (max-width: 1092px) {
+    .delivery {
+        .delivery--address {
+            gap: 14px;
+            .delivery--address__free {
+                padding: 28px 38px;
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+       .delivery--pay {
+        padding: 50px 0;
+        .delivery--pay__cards {
+            display: flex;
+            flex-direction: column;
+            .delivery--pay__cards--card {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .delivery--pay__cards--card2 {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+       } 
+    }
+}
+
+@media (max-width: 733px)  {
+    .delivery {
+        .delivery--address {
+            .delivery--address__free {
+                padding: 42px 38px;
+                height: 220px;
+                h3 {
+                    font-size: 18px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+                h4 {
+                    font-size: 15px;
+                    margin-top: 0;
+                }
+            }
+            .delivery--delivery {
+                padding: 38px 38px;
+                height: 220px;
+                h3 {
+                    font-size: 18px;
+                }
+                .delivery--delivery__choose {
+                    margin: 11px 0;
+                    select {
+                        height: 33px;
+                    }
+                }
+                .delivery--address {
+                    margin-bottom: 10px;
+                    input {
+                        height: 33px;
+                    }
+                }
+            }
+        }
+        .delivery--pay {
+            padding: 50px 0;
+            .delivery--pay__cards {
+                display: flex;
+                flex-direction: column;
+                .delivery--pay__cards--card {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .delivery--pay__cards--card2 {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+           } 
+    }   
+}
+
+@media (max-width: 660px)  {
+    .delivery {
+        .delivery--address {
+            .delivery--address__free {
+                padding: 32px 10px;
+                height: 170px;
+                h3 {
+                    font-size: 14px;
+                }
+                h2 {
+                    font-size: 12px;
+                }
+                h4 {
+                    font-size: 11px;
+                    margin-top: 0;
+                }
+            }
+            .delivery--delivery {
+                padding: 32px 10px;
+                height: 170px;
+                h3 {
+                    font-size: 14px;
+                }
+                .delivery--delivery__choose {
+                    margin: 13px 0;
+                    select {
+                        height: 22px;
+                        font-size: 9px;
+                        padding-left: 4px;
+                    }
+                }
+                .delivery--address {
+                    margin-bottom: 10px;
+                    input {
+                        height: 22px;
+                        font-size: 11px;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width:522px) {
+   .delivery {
+    .delivery--address {
+        flex-direction: column;
+        .delivery--address__free {
+            width: 85%;
+            padding: 20px 40px;
+        }
+        .delivery--delivery {
+            width: 85%;
+            padding: 20px 40px;
+            .delivery--address {
+                flex-direction: row;
+            }
+        }
+    }
+   } 
+}  

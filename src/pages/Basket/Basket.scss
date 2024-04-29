@@ -1,162 +1,71 @@
 #basket {
-  padding: 30px 0 120px 0;
+  padding: 50px 0;
   .basket {
     a {
       font-size: 20px;
       color: rgba(136, 136, 136, 1);
       font-weight: 400;
+      text-decoration: none;
       &:hover {
         color: #090909;
         border-bottom: solid 1px #090909;
       }
     }
-    .basket--emptycard {
-      width: 100%;
-      height: 219px;
-      transition: 0.5s;
-      border-radius: 24px;
-      background: rgba(255, 255, 255, 1);
-      border: 1px solid;
-      margin: 30px 0 50px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(210.55deg, #eff4fd 19.14%, #bed2e7 154.68%);
-      border: 1px solid;
-      border-image-source: linear-gradient(
-        123.5deg,
-        #ffffff 38.36%,
-        rgba(219, 230, 242, 0) 69.31%,
-        #8f9fae 131.91%
-      );
-      box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
-      -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
-      -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
-      border-radius: 44px;
-      p {
-        font-size: 30px;
-        color: rgba(0, 0, 0, 1);
-        font-weight: 500;
-      }
-    }
-    .basket--emptycard:hover {
-      border: 3px solid rgba(255, 255, 255, 1);
-    }
-    .basket--cardIsFull {
-      .basket--cardIsFull__title {
+    .basket--in {
+      .basket--in__title {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 30px 0 25px 0;
-        h1 {
-          color: rgba(0, 0, 0, 1);
+        margin: 30px 0;
+        h2 {
           font-size: 30px;
           font-weight: 400;
         }
-        h4 {
+        button {
           font-size: 20px;
           color: rgba(1, 30, 184, 1);
           font-weight: 400;
+          border: none;
+          outline: none;
+          background: transparent;
           cursor: pointer;
         }
       }
-      .basket--cardIsFull__cards {
+      .basket--in__cards {
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 25px;
-        width: 100%;
+        gap: 50px;
       }
-    }
-    strong {
-      font-size: 30px;
-      font-weight: 600;
-      text-align: right;
-      margin: 30px 0 15px 0;
-      display: block;
-      align-self: self-end;
-    }
-    .basket--cardIsFull__order {
-      color: #090909;
-      width: 295px;
-      height: 61px;
-      font-size: 20px;
-      font-weight: 400;
-      border-radius: 0.5em;
-      background: rgb(239, 242, 248);
-      cursor: pointer;
-      border: 1px solid #e8e8e8;
-      transition: all 0.3s;
-      box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
-      margin-left: 78%;
-      margin-bottom: 80px;
-    }
-    .basket--cardIsFull__order:active {
-      color: #666;
-      box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
-    }
-    .basket--cardIsFull__wayToGet {
-      h1 {
-        font-size: 30px;
-        font-weight: 400;
-      }
-      span {
-        font-size: 20px;
-        color: rgba(1, 30, 184, 1);
-        margin: 38px 0 30px 0;
-        display: inline-block;
-        font-weight: 400;
-      }
-      .basket--cardIsFull__wayToGet--inputs {
-        width: 100%;
-        .basket--cardIsFull__wayToGet--inputs__name {
-          width: 100%;
-          height: 70px;
-          margin-bottom: 30px;
-          padding: 10px 15px;
-          border-radius: 5px;
-          border: 1px solid rgba(212, 212, 212, 1);
-          font-size: 24px;
-          background: transparent;
-          font-weight: 500;
-        }
-        .basket--cardIsFull__wayToGet--inputs__down {
-          display: flex;
-          gap: 21px;
-          input {
-            width: 50%;
-            height: 70px;
-            background: transparent;
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: 1px solid rgba(212, 212, 212, 1);
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 30px;
-          }
-        }
-      }
-      .basket--cardIsFull__wayToGet--signUpBtn {
-        text-align: right;
+      .basket-in__total {
+        margin: 40px 0;
+        gap: 20px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        h1 {
+          font-size: 30px;
+          font-weight: 600;
+          text-align: end;
+        }
+       .basket-in__total--btn {
+        display: flex;
         justify-content: flex-end;
-        gap: 10px;
-        input {
-          width: 20px;
-          cursor: pointer;
-          height: 20px;
-          appearance: none;
-          border: 1px solid rgba(255, 115, 0, 1);
-          border-radius: 50%;
-          border-color: rgba(255, 115, 0, 1);
+        button {
+          width: 295px;
+          height: 61px;
+          border-radius: 20px;
+          background: linear-gradient(
+            210.55deg,
+            #ebf2f9 19.14%,
+            #c6d7eb 154.68%
+          );
+          box-shadow: 16px 16px 64px 0px rgba(18, 61, 101, 0.48);
+          border-top: 2px solid white;
+          border-bottom: none;
+          border-right: none;
+          border-left: 2px solid white;
         }
-        label {
-          font-size: 20px;
-          cursor: pointer;
-          color: rgba(1, 30, 184, 1);
-          font-weight: 400;
-        }
+       }
       }
     }
   }

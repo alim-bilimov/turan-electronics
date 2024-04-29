@@ -1,12 +1,12 @@
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header";
+import Header from "./components/header";
 import MainRoutes from "./routes/MainRoutes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <MainRoutes />
       <Footer />
     </div>
