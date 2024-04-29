@@ -21,7 +21,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import axios from "axios";
 import "./main-media.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Main = () => {
   const swiperRef = useRef(null);
@@ -30,6 +30,9 @@ const Main = () => {
   const [carousel, setCarousel] = useState([]);
   const [products, setProducts] = useState([]);
   const [color, setColor] = useState([]);
+
+  const navigate = useNavigate();
+
   function getCarouserData() {
     axios("http://127.0.0.1:8000/shop_urls/caruselphotos/").then((res) => {
       setCarousel(res.data);
@@ -190,7 +193,10 @@ const Main = () => {
                 <SwiperSlide>
                   <div className="acces-blocks">
                     {products.map((el) => (
-                      <div className="acces-block">
+                      <div
+                        onClick={(n) => navigate("/detail")}
+                        className="acces-block"
+                      >
                         <img src={el.image} alt="" />
                         <h2>Iphone</h2>
                         <h3 className="adap-price">5 700 сом</h3>
