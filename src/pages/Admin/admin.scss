@@ -20,15 +20,13 @@
     h1 {
       margin: 50px 0px;
       font-family: Montserrat;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 500;
       line-height: 24px;
       text-align: center;
     }
-    .admin--card {
-      padding: 80px 105px;
-
-      top: 429px;
+    .admin--cards {
+      top: 129px;
       left: 160px;
       gap: 0px;
       border-radius: 24px 0px 0px 0px;
@@ -51,7 +49,7 @@
       border-radius: 44px;
       h3 {
         font-family: Montserrat;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 25px;
         text-align: center;
@@ -71,7 +69,7 @@
           padding: 20px;
           border-radius: 50px;
           border: none;
-          outline: none;
+
           background-color: #eaf0f6;
           box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
         }
@@ -101,7 +99,7 @@
           }
         }
         .h3--pass {
-          font-size: 20px;
+          font-size: 100px;
           margin-left: 225px;
           border-bottom: solid 1px black;
         }
@@ -265,20 +263,101 @@
 
 @media (max-width: 992px) {
   #admin {
+    .admin-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-size: 25px;
+      }
+    }
     .admin {
-      .admin-link {
-        display: flex;
-        align-items: left;
-      }
+      margin: 10px 30px;
+
       h1 {
-        font-size: 12px;
-        text-align: left;
+        font-size: 28px;
       }
-      .admin--card {
-        padding: 31px 25px;
-        width: 700px;
+
+      .admin--cards {
+        background-color: red;
+        padding: 50px 50px;
+        margin-top: 15px;
+        border-radius: 20px;
+
         h3 {
-          font-size: 22px;
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        .admin--cardInput {
+          margin-top: 20px;
+          gap: 10px;
+          button {
+            font-size: 28px;
+          }
+          .input {
+            width: 350px;
+            height: 40px;
+            font-size: 20px;
+            padding: 23px;
+          }
+          .input--icons {
+            margin-top: 20px;
+            width: 350px;
+            height: 40px;
+            font-size: 2px;
+            padding: 23px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: #eaf0f6;
+            box-shadow: inset 4px 6px 12px #cdcde7, inset -4px -4px 12px #ffffff;
+            display: flex;
+            align-items: center;
+
+            input {
+              width: 350px;
+              height: 40px;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              font-size: 220x;
+            }
+            .eye {
+              font-size: 10px;
+            }
+          }
+          .h3--pass {
+            font-size: 10px;
+            margin-left: 130px;
+          }
+          button {
+            font-size: 20px;
+            padding: 0.7em 1.5em;
+          }
+
+          .admin--text {
+            h4 {
+              font-size: 20px;
+            }
+            a {
+              font-size: 22px;
+              line-height: 22px;
+            }
+          }
+          .img--admin {
+            gap: 25px;
+            img {
+              margin: 10px 0px;
+              width: 33px;
+            }
+          }
+          .admin--registration {
+            img {
+              margin: 10px 0;
+              width: 38px;
+            }
+          }
         }
       }
     }
@@ -287,45 +366,30 @@
 
 @media (max-width: 768px) {
   #admin {
-    .admin-link {
-      a {
-        font-size: 22px;
-      }
-    }
     .admin {
-      margin-top: 40px;
-      h3 {
-        font-size: 1px;
-      }
-
-      .admin--card {
-        padding: 29px 35px;
-        width: 620px;
-
+      .admin--cards {
         h3 {
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 20px;
         }
+        padding: 80px 50px;
         .admin--cardInput {
           .input {
             font-size: 18px;
-            height: 53px;
-          }
-          button {
-            font-size: 18px;
           }
           .input--icons {
-            height: 53px;
             input {
               font-size: 18px;
             }
           }
+          button {
+            font-size: 18px;
+          }
           .admin--text {
-            a {
+            h4 {
               font-size: 20px;
             }
-            h4 {
-              font-size: 19px;
+            a {
+              font-size: 22px;
             }
           }
         }
@@ -348,16 +412,21 @@
       margin: 20px 30px;
 
       h1 {
-        font-size: 29px;
+        font-size: 100px;
       }
 
-      .admin--card {
+      .admin--cards {
         background-color: red;
-        padding: 61px 42px;
+        padding: 10px 25px;
 
         h3 {
-          font-size: 18px;
+          font-size: 14px;
           line-height: 20px;
+        }
+        .admin--cardInput {
+          .input {
+            height: 40px;
+          }
         }
       }
     }

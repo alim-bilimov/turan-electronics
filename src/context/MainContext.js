@@ -11,7 +11,6 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 const MyContext = createContext();
 export const useMainContext = () => useContext(MyContext);
@@ -36,7 +35,9 @@ const MainContext = ({ children }) => {
         navigate("/admin");
       });
     } catch (error) {
-      setValid(true);
+      if (email === "" && pass === "") {
+        setValid(true);
+      }
       setErrors(error.message);
     }
   }
@@ -58,6 +59,7 @@ const MainContext = ({ children }) => {
       setUser(user);
     });
   }
+  console.log(user);
 
   useEffect(() => {
     userCreate();

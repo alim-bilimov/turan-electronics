@@ -1,15 +1,16 @@
 import React from "react";
-import Basketcard from "./BasketCard/Basketcard";
-import Delivery from "./BasketCard/Delivery/Delivery";
-import WayToPay from "./BasketCard/Delivery/WayToPay/WayToPay";
+import EmptyBasketCard from "./EmptyBasketCard/EmptyBasketCard";
 import { Link } from "react-router-dom";
+import BasketCard from "./BasketCard/BasketCard";
+import WayToPay from "./WayToPay/WayToPay";
+import Delivery from "./Delivery/Delivery";
 
 const fakeData = [
   {
     id: 1,
     title: "Смартфон Apple Iphone 14 Pro max 256GB",
     description: "iPhone 14 Pro MaxВолшебный новый способ взаимодействия.....",
-    color: ["black", "aqua", "pink"],
+    color: "blue",
     quantity: 1,
     rating: 3,
     price: 81000,
@@ -19,7 +20,7 @@ const fakeData = [
     id: 1,
     title: "Смартфон Apple Iphone 14 Pro max 256GB",
     description: "iPhone 14 Pro MaxВолшебный новый способ взаимодействия.....",
-    color: ["white", "blue", "pink"],
+    color: "pink",
     quantity: 1,
     rating: 5,
     price: 74500,
@@ -35,45 +36,26 @@ const Basket = () => {
           <Link to="/">Главная /</Link>
           <Link to="/catalog"> Каталог /</Link>
           <Link to="/basket"> Корзина</Link>
-          <div className="basket--emptycard">
-            <p>Ваша корзина пуста</p>
-          </div>
-          <div className="basket--cardIsFull">
-            <div className="basket--cardIsFull__title">
-              <h1>Корзина</h1>
-              <h4>Очистить корзину</h4>
+          <EmptyBasketCard text={"Ваша корзина пуста"} />
+          <div className="basket--in">
+            <div className="basket--in__title">
+              <h2>Корзина</h2>
+              <button>Очистить корзину</button>
             </div>
-            <div className="basket--cardIsFull__cards">
-              {fakeData.map((el) => (
-                <Basketcard data={el} />
+            <div className="basket--in__cards">
+              {fakeData.map((el, id) => (
+                <BasketCard el={el} key={id} />
               ))}
             </div>
-            <strong>Итого 149 000 сом</strong>
-            <button className="basket--cardIsFull__order">
-              Оформить заказ
-            </button>
-            <div className="basket--cardIsFull__wayToGet">
-              <h1>Способ получения</h1>
-              <span>У меня есть аккаунт</span>
-              <div className="basket--cardIsFull__wayToGet--inputs">
-                <input
-                  type="text"
-                  placeholder="Фамилия и имя  *"
-                  className="basket--cardIsFull__wayToGet--inputs__name"
-                />
-                <div className="basket--cardIsFull__wayToGet--inputs__down">
-                  <input type="text" placeholder="Телефон *" />
-                  <input type="email" placeholder="Email" />
-                </div>
-              </div>
-              <div className="basket--cardIsFull__wayToGet--signUpBtn">
-                <input type="radio" />
-                <label>Зарегистрироваться</label>
+            <div className="basket-in__total">
+              <h1>Итого 149 000 сом</h1>
+              <div className="basket-in__total--btn">
+                <button>Оформить заказ</button>
               </div>
             </div>
+            <WayToPay/>
+            <Delivery/>
           </div>
-          <Delivery />
-          <WayToPay />
         </div>
       </div>
     </div>
