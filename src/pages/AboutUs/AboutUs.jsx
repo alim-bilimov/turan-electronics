@@ -5,6 +5,8 @@ import axios from "axios";
 
 const AboutUs = () => {
 
+
+
   const [details, setDetails] = useState([]);
 
   async function getData() {

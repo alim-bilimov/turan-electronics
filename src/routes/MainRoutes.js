@@ -8,8 +8,6 @@ import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
 import Main from "../pages/Main/Main";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
-
-
 const MainRoutes = () => {
   const PUBLIC = [
     { path: "/", element: <Main />, key: 1 },
