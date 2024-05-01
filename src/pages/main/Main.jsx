@@ -1,4 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { RiShoppingBasketLine } from "react-icons/ri";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa6";
 import Dyson from "../../image/Dysign.png";
 import Apple from "../../image/Apple.png";
 import Plastation from "../../image/Plastation.png";
@@ -9,19 +17,11 @@ import BrandDyson from "../../image/dyson.png";
 import BrandPlastation from "../../image/plastatyon.png";
 import BrandSlmusng from "../../image/slmusng.png";
 import BrandXiomi from "../../image/mi.png";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import axios from "axios";
 import "@splidejs/react-splide/css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FaArrowLeftLong } from "react-icons/fa6";
-import { RiShoppingBasketLine } from "react-icons/ri";
-import { FaCheckCircle } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
-import axios from "axios";
 import "./main-media.scss";
-import { NavLink, useNavigate } from "react-router-dom";
 
 const Main = () => {
   const swiperRef = useRef(null);
@@ -48,6 +48,9 @@ const Main = () => {
       setColor(res.data);
     });
   }
+  function scrollTop() {
+    window.scroll(0, 0);
+  }
   const goNext = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
@@ -72,8 +75,8 @@ const Main = () => {
             options={{ rewind: true, autoplay: true, interval: 3000 }}
             aria-label="React Splide Example"
           >
-            {carousel.map((el) => (
-              <SplideSlide>
+            {carousel.map((el, index) => (
+              <SplideSlide key={index}>
                 <img src={el.photo} alt="Image 1" />
               </SplideSlide>
             ))}
@@ -192,17 +195,19 @@ const Main = () => {
               <Swiper ref={swiperRef} rewind={true}>
                 <SwiperSlide>
                   <div className="acces-blocks">
-                    {products.map((el) => (
-                      <div
-                        onClick={(n) => navigate("/detail")}
-                        className="acces-block"
-                      >
+                    {products.map((el, index) => (
+                      <div key={index} className="acces-block">
                         <img src={el.image} alt="" />
                         <h2>Iphone</h2>
                         <h3 className="adap-price">5 700 сом</h3>
                         <div className="main-basket">
-                          <button>Быстрый заказ</button>
-                          <RiShoppingBasketLine />
+                          <butto>Быстрый заказ</butto>
+                          <RiShoppingBasketLine
+                            onClick={() => {
+                              navigate("/detail");
+                              scrollTop();
+                            }}
+                          />
                         </div>
                         <div className="main-basket-2">
                           <h3>5 700 сом</h3>
