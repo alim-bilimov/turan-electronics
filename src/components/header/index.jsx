@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../image/Logo image.png";
 import img from "../../image/_Слой_1.png";
 import imgText from "../../image/Vector.png";
@@ -10,17 +10,35 @@ import { GrServices } from "react-icons/gr";
 import { FaCheckCircle } from "react-icons/fa";
 import { FiPercent } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { SlBasket } from "react-icons/sl";
 
 const Header = () => {
+  const [transform, setTransform] = useState(false);
+
   return (
     <div>
       <div id="header">
         <div className="container">
           <div className="header">
+            <div
+              style={{
+                transform: transform ? "translateX(100px)" : "translateX(0)",
+              }}
+              className="div--class--menu"
+            ></div>
             <img className="logo" src={logo} alt="" width={220} />
+            <div
+              onClick={() => {
+                setTransform(!transform);
+              }}
+              className="burger--menu"
+            >
+              <RxHamburgerMenu style={{ fontSize: "30px" }} />
+            </div>
             <div className="header-text">
               <div className="img-text">
-                <img src={img} alt="" />
+                <img className="img-turan" src={img} alt="" />
                 <img className="text-logo" src={imgText} alt="" />
               </div>
               <div className="veb-btn">
@@ -47,7 +65,7 @@ const Header = () => {
                 </NavLink>
                 <NavLink to="/basket">
                   <button>
-                    <CiShoppingBasket style={{ fontSize: "20px" }} />
+                    <CiShoppingBasket />
                   </button>
                 </NavLink>
                 <NavLink to="/admin">
@@ -57,6 +75,9 @@ const Header = () => {
                 </NavLink>
               </div>
               <input type="text" placeholder="Поиск..." />
+            </div>
+            <div className="basket--icons">
+              <SlBasket style={{ fontSize: "25px" }} />
             </div>
           </div>
         </div>
@@ -69,7 +90,6 @@ const Header = () => {
               <RiPoliceCarFill
                 style={{
                   color: " #FF7300",
-                  fontSize: "30px",
                 }}
               />{" "}
               Удобная доставка

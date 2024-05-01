@@ -12,6 +12,10 @@ import { auth } from "../../firebase";
 import { signOut } from "firebase/auth";
 
 const Admin = () => {
+  const [validate, setValidate] = useState(false);
+  const [users, setUsers] = useState(false);
+  const [passValid, setPassValid] = useState(false);
+  const [emailValid, setEmailValid] = useState(false);
   const [eye, setEye] = useState(false);
   const { signIn, user, errors } = useMainContext();
   console.log(user);
@@ -28,6 +32,11 @@ const Admin = () => {
     try {
       return await signIn(values.email, values.pass);
     } catch (error) {
+      if (values.email === "" && values.pass === "") {
+        setUsers(true);
+      } else if (values !== values.email && values !== values.pass) {
+        setValidate(true);
+      }
       console.log(error);
     }
   }
@@ -80,20 +89,38 @@ const Admin = () => {
                 </div>
               </div>
             ) : (
-              <div className="admin--card">
+              <div className="admin--cards">
                 <h3>
                   Авторизуйтесь, указав свои контактные данные, или <br />
                   воспользовавшись перечисленными сервисами
                 </h3>
                 <div className="admin--cardInput">
                   <input
+                    onClick={() => {
+                      setUsers(false);
+                      setValidate(false);
+                    }}
+                    style={{
+                      outline: users ? "solid 1px red" : "",
+                      border: validate ? "solid 1px red" : "",
+                    }}
                     onChange={handleSign}
                     className="input"
                     type="text"
                     placeholder="Email или телефон ..."
                     name="email"
                   />
-                  <div className="input--icons">
+                  <div
+                    onClick={() => {
+                      setUsers(false);
+                      setValidate(false);
+                    }}
+                    style={{
+                      border: users ? "1px solid red" : "",
+                      outline: validate ? "solid 1px red" : "",
+                    }}
+                    className="input--icons"
+                  >
                     <input
                       onChange={handleSign}
                       type={eye ? "text" : "password"}
@@ -120,6 +147,13 @@ const Admin = () => {
                       }}
                     />
                   </div>
+                  <h3 style={{ color: "red" }}>
+                    {users ? "Напишите логин и пароль!!!" : ""}
+                  </h3>
+                  <h3 style={{ color: "red" }}>
+                    {validate ? "Неверный логин или пароль!!!" : ""}
+                  </h3>
+
                   <h3 className="h3--pass">Забыли пароль?</h3>
                   <h3>{errors}</h3>
                   <button onClick={() => postSign()}>Войти</button>
