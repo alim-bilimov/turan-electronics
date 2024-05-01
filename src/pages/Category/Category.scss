@@ -1,0 +1,119 @@
+.category {
+    h1 {
+      color: #888888;
+      margin: 40px 0;
+    }
+    .category-filter-products {
+      img {
+        width: 100px;
+      }
+    }
+    .category-blocks {
+      margin: 20px 0 0 20px;
+      display: flex;
+      gap: 30px;
+      .category-block {
+        background: linear-gradient(210.55deg, #eff4fd 19.14%, #aab4c1 154.68%);
+        box-shadow: 0.4px 0px 20px rgba(159, 162, 180, 0.764);
+        border-radius: 20px;
+        padding: 10px 30px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        border: solid 1.5px white;
+        position: relative;
+  
+        .colors {
+          display: flex;
+          gap: 10px;
+          margin-top: 20px;
+          .color-1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgb(18, 18, 18);
+            margin-left: 10px;
+          }
+          .color-2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgb(250, 172, 172);
+          }
+          .color-3 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgb(251, 183, 11);
+          }
+        }
+        .plot {
+          color: #888888;
+          margin: 10px 0 20px 0;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 18px;
+        }
+        .category-star-rating {
+          display: flex;
+          align-items: center;
+          p {
+            padding: 6px 13px;
+            background: #ff7300;
+            color: white;
+            border-radius: 10px;
+            border: white 2px solid;
+          }
+        }
+        h2 {
+          font-weight: 200;
+          width: 260px;
+        }
+        h3 {
+          font-size: 25px;
+          font-weight: 500;
+          margin: 10px 0;
+        }
+        img {
+          width: 200px;
+          height: 270px;
+          object-fit: cover;
+          margin: 0 30px;
+        }
+        .like {
+          position: absolute;
+          top: 44%;
+          right: 13%;
+          cursor: pointer;
+          font-size: 30px;
+          color: #00000059;
+        }
+        button {
+          padding: 10px 30px;
+          box-shadow: 0 0.3px 10px rgb(232, 232, 232);
+          font-size: 19px;
+          border: solid 2.3px white;
+          box-shadow: 0 0.3px 10px rgb(255, 255, 255);
+          border-radius: 25px;
+          background: linear-gradient(210.55deg, #eaebf5 19.14%, #edeff1 154.68%);
+          cursor: pointer;
+        }
+        button:active {
+          box-shadow: none;
+          transform: translate(1px, 1px);
+        }
+        svg {
+          font-size: 40px;
+          cursor: pointer;
+        }
+        .category-basket {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+  }
+  

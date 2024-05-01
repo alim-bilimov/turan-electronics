@@ -1,0 +1,111 @@
+@media (max-width: 1728px) {
+  .footer-notebook {
+    #brand {
+      .brand {
+        .brand--allCard {
+          .brand--card {
+            width: 250px;
+            height: 120px;
+            border-radius: 30px;
+            img {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+    #turan {
+      .turan {
+        gap: 100px;
+        .--right {
+          h3 {
+            font-size: 25px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .footer-notebook {
+    #brand {
+      .brand {
+        .brand--allCard {
+          .brand--card {
+            width: 210px;
+            height: 110px;
+            border-radius: 20px;
+            img {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+    #turan {
+      .turan {
+        gap: 50px;
+        .turan--logo img:nth-child(2) {
+          width: 210px;
+        }
+        .--right {
+          h3 {
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 2px;
+          }
+          .turan--right--h3 {
+            margin-top: 20px;
+          }
+        }
+      }
+      .turan--btn--logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+        button {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          color: #ff7300;
+
+          padding: 0.7em 0.7em;
+          font-size: 24px;
+          border-radius: 1.5em;
+          background: rgb(239, 242, 248);
+          cursor: pointer;
+          border: 1px solid #e8e8e8;
+          transition: all 0.3s;
+          box-shadow: 6px 6px 12px #bed2e7, -6px -6px 12px #eff4fd;
+        }
+
+        button:active {
+          color: #666;
+          box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+  .footer-notebook {
+    display: none;
+  }
+  .footer-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+}
+@media (max-width: 320px) {
+  .footer-mobile {
+    gap: 55px;
+    height: 60px;
+    svg {
+      font-size: 23px;
+    }
+  }
+}

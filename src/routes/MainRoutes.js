@@ -1,5 +1,4 @@
 import React from "react";
-import Main from "../pages/main";
 import { Routes, Route } from "react-router-dom";
 import Admin from "../pages/Admin/Admin";
 import AboutUs from "../pages/AboutUs/AboutUs";
@@ -7,10 +6,13 @@ import News from "../pages/News/News";
 import Category from "../pages/Category/Category";
 import Basket from "../pages/Basket/Basket";
 import Favorite from "../pages/Favorite/Favorite";
-import Register from "../pages/Admin/registration";
 import Profile from "../pages/Admin/editProfile";
 import { element } from "prop-types";
 import Create from "../pages/amdinTwo";
+import Main from "../pages/main/Main";
+import Register from "../pages/Admin/registration";
+import Main from "../pages/Main/Main";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
 
 const MainRoutes = () => {
   const PUBLIC = [
@@ -20,10 +22,8 @@ const MainRoutes = () => {
     { path: "/aboutus", element: <AboutUs />, key: 4 },
     { path: "/admin", element: <Admin />, key: 5 },
     { path: "/basket", element: <Basket />, key: 6 },
-    { path: "/favorite", element: <Favorite />, key: 7 },
-    { path: "/register", element: <Register />, key: 8 },
-    { path: "/profile", element: <Profile />, key: 9 },
-    { path: "/turan", element: <Create />, key: 10 },
+    { path: "/favorite", element: <Favorite />, key: 7 }, 
+    { path: "/detail", element:<ProductDetails />, key: 8 }, 
   ];
 
   return (

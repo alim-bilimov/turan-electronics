@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./AboutUs.scss";
+import "./AboutUs-media.scss";
 import axios from "axios";
 
 const AboutUs = () => {
+
+
+
   const [details, setDetails] = useState([]);
 
   async function getData() {

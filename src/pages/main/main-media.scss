@@ -1,0 +1,532 @@
+@media (max-width: 1280px) {
+  #main-category {
+    .main-category-game-electronic {
+      div {
+        img {
+          width: 233px;
+          height: 170px;
+          object-fit: cover;
+        }
+        button {
+          padding: 10px 50px;
+        }
+      }
+    }
+  }
+  #acces {
+    .main-acces {
+      .acces-blocks {
+        .acces-block {
+          h2 {
+            margin-top: 10px;
+          }
+          h3 {
+            font-size: 22px;
+            margin: 10px 0;
+          }
+          img {
+            width: 160px;
+            height: 150px;
+          }
+          button {
+            width: 150px;
+            padding: 10px 0;
+            font-size: 16px;
+          }
+          svg {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+  #new {
+    .new-blocks {
+      gap: 25px;
+      .new-block {
+        padding: 15px 20px 15px 25px;
+        .colors {
+          .color-1 {
+            width: 25px;
+            height: 25px;
+          }
+          .color-2 {
+            width: 25px;
+            height: 25px;
+          }
+          .color-3 {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        span {
+          font-size: 17px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+        h3 {
+          font-size: 21px;
+          margin-top: 15px;
+        }
+        img {
+          width: 150px;
+          height: 200px;
+        }
+        button {
+          padding: 8px 20px;
+          font-size: 17px;
+        }
+        svg {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #carousel {
+    img {
+      height: 250px;
+      margin: 25px 0;
+    }
+    .splide__arrow {
+      display: none;
+    }
+    .splide__pagination__page {
+      margin-bottom: 30px;
+    }
+  }
+  #main-category {
+    .main-category-game-electronic {
+      gap: 10px;
+      div {
+        padding: 10px;
+        box-shadow: 0 0.3px 10px rgba(154, 154, 154, 0.77);
+        img {
+          width: 145px;
+          height: 130px;
+          object-fit: cover;
+        }
+        button {
+          padding: 6px 30px;
+          margin-top: 10px;
+          font-size: 15px;
+          box-shadow: 0 0.3px 10px rgba(255, 255, 255, 0.823);
+          border: solid 0.1px rgba(255, 255, 255, 0.774);
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  #acces {
+    margin: 30px 0 0 0;
+    padding-right: 10px;
+    .acces-glav {
+      h1 {
+        font-size: 23px;
+      }
+      a {
+        display: block;
+      }
+      .next-back {
+        display: none;
+      }
+    }
+    .main-acces {
+      .acces-blocks {
+        gap: 15px;
+        .acces-block {
+          box-shadow: 0.2px 0px 10px rgba(183, 185, 199, 0.764);
+          img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+          }
+          .adap-price {
+            display: none;
+          }
+          .main-basket {
+            display: none;
+          }
+          h2 {
+            margin: 10px 0;
+            font-size: 20px;
+          }
+          .main-basket-2 {
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            h3 {
+              margin: 0;
+              font-size: 16px;
+            }
+            svg {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+  .container {
+    width: 96%;
+  }
+  #carousel {
+    img {
+      height: 200px;
+      margin: 20px 0;
+    }
+    .splide__arrow {
+      display: none;
+    }
+    .splide__pagination__page {
+      margin-bottom: 30px;
+    }
+  }
+  #main-category {
+    display: none;
+  }
+  #mobile-brand {
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    #brand {
+      .brand {
+        .brand--allCard {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          animation: mobile-scroll 5.6s linear infinite;
+          @keyframes mobile-scroll {
+            0% {
+              transform: translateX(-29%);
+            }
+            100% {
+              transform: translateX(-223%);
+            }
+          }
+        }
+      }
+    }
+  }
+  #acces {
+    margin: 30px 0 0 0;
+    padding-right: 10px;
+    .acces-glav {
+      h1 {
+        font-size: 23px;
+      }
+      a {
+        display: block;
+      }
+      .next-back {
+        display: none;
+      }
+    }
+    .main-acces {
+      .acces-blocks {
+        .acces-block {
+          img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+          }
+          .adap-price {
+            display: none;
+          }
+          .main-basket {
+            display: none;
+          }
+          h2 {
+            margin: 13px 0;
+            font-size: 18px;
+          }
+          .main-basket-2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            h3 {
+              margin: 0;
+              font-size: 16px;
+            }
+            svg {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #new {
+    .new-glav {
+      padding: 30px 10px 0 0;
+      h1 {
+        font-size: 22px;
+      }
+      .all {
+        display: none;
+      }
+      a {
+        display: block;
+      }
+    }
+    .new-blocks {
+      display: none;
+    }
+  }
+  #new-mobile {
+    display: flex;
+  }
+  #recommend {
+    margin-bottom: 120px;
+    #new {
+      .new-blocks {
+        display: flex;
+        gap: 10px;
+        .new-block {
+          border-radius: 10px;
+          padding: 8px;
+          .colors {
+            margin: 5px 0 5px 5px;
+            .color-1 {
+              width: 20px;
+              height: 20px;
+            }
+            .color-2 {
+              width: 20px;
+              height: 20px;
+            }
+            .color-3 {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .plot {
+            display: none;
+          }
+          .in-stock {
+            svg {
+              font-size: 20px;
+            }
+          }
+          span {
+            display: flex;
+            font-size: 14px;
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 18px;
+            margin-left: 10px;
+          }
+          h3 {
+            display: none;
+          }
+          img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+          }
+          .like {
+            top: 42%;
+            right: 7%;
+            svg {
+              font-size: 22px;
+            }
+          }
+          .new-basket {
+            display: none;
+          }
+          .new-mobile-basket {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 5px;
+            margin-left: 10px;
+            svg {
+              padding: 5px;
+              width: 40px;
+              height: 40px;
+              border: solid 1px white;
+              border-radius: 7px;
+            }
+            h4 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #carousel {
+    img {
+      height: 150px;
+    }
+  }
+  #mobile-brand {
+    #brand {
+      .brand {
+        .brand--allCard {
+          h3 {
+            font-size: 14px;
+          }
+          .brand--card {
+            width: 90px;
+            height: 90px;
+            img {
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #acces {
+    margin: 30px 0 0 0;
+    padding-right: 10px;
+    .acces-glav {
+      h1 {
+        font-size: 20px;
+      }
+      a {
+        font-size: 15px;
+      }
+    }
+    .main-acces {
+      .acces-blocks {
+        .acces-block {
+          border-radius: 10px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+          h2 {
+            margin: 10px 0;
+            font-size: 14px;
+            margin-bottom: 2px;
+          }
+          .main-basket-2 {
+            gap: 10px;
+            width: 100px;
+            h3 {
+              font-size: 13px;
+            }
+            svg {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #new {
+    .new-glav {
+      h1 {
+        font-size: 16px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+    .new-blocks {
+      display: none;
+    }
+  }
+  #new-mobile {
+    .new-mobile-blocks {
+      .new-mobile-block {
+        .new-mobile-block-part-1 {
+          width: 130px;
+          margin-left: 10px;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        h4 {
+          margin-top: 10px;
+          font-size: 14px;
+        }
+        p {
+          margin: 5px 0;
+        }
+        .new-mobile-basket {
+          gap: 15px;
+          h5 {
+            font-size: 13px;
+          }
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  #recommend {
+    padding-right: 5px;
+    #new {
+      .new-blocks {
+        .new-block {
+          .colors {
+            gap: 5px;
+            margin: 0 0 0 5px;
+            .color-1 {
+              width: 15px;
+              height: 15px;
+            }
+            .color-2 {
+              width: 15px;
+              height: 15px;
+            }
+            .color-3 {
+              width: 15px;
+              height: 15px;
+            }
+          }
+          .in-stock {
+            svg {
+              font-size: 13px;
+            }
+          }
+          span {
+            font-size: 12px;
+          }
+          h2 {
+            font-size: 14px;
+          }
+          img {
+            width: 55px;
+            height: 55px;
+          }
+          .like {
+            top: 40%;
+            svg {
+              font-size: 18px;
+            }
+          }
+          .new-mobile-basket {
+            width: 105px;
+            gap: 10px;
+            svg {
+              width: 30px;
+              height: 30px;
+            }
+            h4 {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
