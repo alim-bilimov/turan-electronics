@@ -3,17 +3,6 @@ import "./AboutUs.scss";
 import axios from "axios";
 
 const AboutUs = () => {
-  // const [data, setData] = useState([]);
-
-  // const getData = () => {
-  //   axios('http://127.0.0.1:8000/shop_urls/about_us/')
-  //   .then(res => console.log(res))
-  // };
-
-  // // console.log(data);
-  // useEffect(() => {
-  //   getData();
-  // }, []);
   const [details, setDetails] = useState([]);
 
   async function getData() {

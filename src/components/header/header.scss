@@ -1,5 +1,10 @@
 #header {
   padding-top: 25px;
+  .div--class--menu {
+    width: 100px;
+    height: 100vh;
+    background-color: #666;
+  }
   .header {
     display: flex;
     align-items: center;
@@ -23,6 +28,13 @@
     -webkit-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
     -moz-box-shadow: 18px -10px 157px -6px rgba(18, 61, 101, 0.44);
     border-radius: 44px;
+    .burger--menu {
+      display: none;
+    }
+    .div--class--menu {
+      display: none;
+    }
+
     .logo {
       margin-left: 1px;
     }
@@ -59,6 +71,9 @@
           box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
         }
       }
+    }
+    .basket--icons {
+      display: none;
     }
     .header-btn {
       display: flex;
@@ -112,7 +127,7 @@
       align-items: center;
       gap: 20px;
       color: #090909;
-      padding: 0.7em 2%;
+      padding: 0.7em 0.7em;
       font-size: 24px;
       border-radius: 0.5em;
       background: rgb(239, 242, 248);
@@ -125,6 +140,152 @@
     button:active {
       color: #666;
       box-shadow: inset 4px 4px 12px #eff4fd, inset -4px -4px 12px #eff4fd;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #header {
+    .header {
+      .header-text {
+        .img-text {
+          .text-logo {
+            width: 170px;
+          }
+          .img-turan {
+            width: 100px;
+          }
+        }
+
+        .veb-btn {
+          gap: 20px;
+          button {
+            padding: 0.7em 0.7em;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #header {
+    .header {
+      .header-text {
+        .veb-btn {
+          button {
+            padding: 0.7em 0.7em;
+            font-size: 16px;
+          }
+        }
+      }
+      .header-btn {
+        button {
+          padding: 0.7em 1.2em;
+          font-size: 18px;
+        }
+        input {
+          width: 200px;
+          font-size: 17px;
+          height: 45px;
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      button {
+        padding: 0.8em 0.5em;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    .header {
+      .logo {
+        width: 130px;
+      }
+      .header-text {
+        .img-text {
+          .img-turan {
+            width: 80px;
+          }
+        }
+        .veb-btn {
+          gap: 30px;
+          button {
+            font-size: 13px;
+          }
+        }
+      }
+      .header-btn {
+        button {
+          font-size: 13px;
+        }
+        input {
+          width: 130px;
+          height: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      button {
+        padding: 0.9em 0.5em;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  #header {
+    .header {
+      width: 100%;
+      height: 90px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      .logo {
+        display: none;
+      }
+      .burger--menu {
+        display: block;
+      }
+      .header-text {
+        .img-text {
+          .img-turan {
+            width: 40px;
+          }
+          .text-logo {
+            width: 93px;
+          }
+        }
+        .veb-btn {
+          display: none;
+        }
+      }
+      .header-btn {
+        display: none;
+      }
+      .basket--icons {
+        display: block;
+        width: 30px;
+      }
+    }
+  }
+  #hero {
+    .hero {
+      button {
+        gap: 10px;
+        font-size: 7px;
+        padding: 10px 10px;
+      }
     }
   }
 }
