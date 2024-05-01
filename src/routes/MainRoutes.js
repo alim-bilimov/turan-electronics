@@ -11,7 +11,6 @@ import { element } from "prop-types";
 import Create from "../pages/amdinTwo";
 import Main from "../pages/main/Main";
 import Register from "../pages/Admin/registration";
-import Main from "../pages/Main/Main";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 
 const MainRoutes = () => {
